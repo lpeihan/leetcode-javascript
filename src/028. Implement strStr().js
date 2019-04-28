@@ -4,16 +4,17 @@
  * @param {string} needle
  * @return {number}
  */
-// var strStr = function(haystack, needle) {
-//     return haystack.indexOf(needle);
+
+// export var strStr = function (haystack, needle) {
+//   return haystack.indexOf(needle);
 // };
 
-var strStr = function(haystack, needle) {
-    for (let i = 0; i < haystack.length; i++) {
-        if (haystack.slice(i, needle.length + i) === needle) {
-            return i;
-        }
+export var strStr = function (haystack, needle) {
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack.slice(i, needle.length + i) === needle) {
+      return i;
     }
-    
-    return needle ? -1 : 0;
+  }
+
+  return needle ? -1 : 0;
 };

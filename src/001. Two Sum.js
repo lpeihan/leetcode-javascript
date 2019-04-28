@@ -3,22 +3,22 @@
  * @param {number} target
  * @return {number[]}
  */
-// var twoSum = function(nums, target) {
-//     for (let i = 0; i < nums.length; i++) {
-//         const val = nums[i];
-//         for (let j = i + 1; j < nums.length; j++) {
-//             let sum = val + nums[j];
-            
-//             if (sum === target) {
-//                 return [i, j];
-//             }
-//         }
+// export var twoSum = function (nums, target) {
+//   for (let i = 0; i < nums.length; i++) {
+//     const val = nums[i];
+//     for (let j = i + 1; j < nums.length; j++) {
+//       let sum = val + nums[j];
+
+//       if (sum === target) {
+//         return [i, j];
+//       }
 //     }
-    
-//     return null;
+//   }
+
+//   return null;
 // };
 
-var twoSum = function(nums, target) {
+export var twoSum = function (nums, target) {
   const map = {};
 
   for (let i = 0; i < nums.length; i++) {

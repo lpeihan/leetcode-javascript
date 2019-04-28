@@ -5,27 +5,27 @@
  * @return {number}
  */
 
-// var removeElement = function(nums, val) {
-//     let count = 0;
-    
-//     for (let i = 0; i < nums.length; i++) {
-//         if (nums[i] != val) {
-//             nums[count] = nums[i]; 
-//             count++;
-//         }
+// export var removeElement = function (nums, val) {
+//   let count = 0;
+
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] !== val) {
+//       nums[count] = nums[i];
+//       count++;
 //     }
-    
-//     return count;
+//   }
+
+//   return count;
 // };
 
-var removeElement = function(nums, val) {
-    let i;
-    for (i = 0; i < nums.length; i++) {
-        if (nums[i] === val) {
-            nums.splice(i, 1);
-            i--;
-        }
+export var removeElement = function (nums, val) {
+  let i;
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] === val) {
+      nums.splice(i, 1);
+      i--;
     }
-    
-    return i;
+  }
+
+  return i;
 };
