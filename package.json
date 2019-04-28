@@ -1,0 +1,19 @@
+{
+  "name": "leetcode-javascript",
+  "version": "1.0.0",
+  "description": "one day one leetcode!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpeihan/leetcode-javascript.git"
+  },
+  "author": "lpeihan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpeihan/leetcode-javascript/issues"
+  },
+  "homepage": "https://github.com/lpeihan/leetcode-javascript#readme"
+}
