@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lpeihan/leetcode-javascript/issues"
   },
-  "homepage": "https://github.com/lpeihan/leetcode-javascript#readme"
+  "homepage": "https://github.com/lpeihan/leetcode-javascript#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
 }
