@@ -1,7 +1,6 @@
 # one day one leetcode!
 
 [![Build Status](https://www.travis-ci.org/lpeihan/leetcode-javascript.svg?branch=master)](https://www.travis-ci.org/lpeihan/leetcode-javascript)
-
 [![codecov](https://codecov.io/gh/lpeihan/leetcode-javascript/branch/master/graph/badge.svg)](https://codecov.io/gh/lpeihan/leetcode-javascript)
 
 > 先定个小目标，比如把难度为 `easy` 题目全部做完
