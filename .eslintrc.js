@@ -14,6 +14,8 @@ module.exports = {
   },
   // off 0 warn 1 error 2
   'rules': {
-    'semi': [2, 'always']
+    'semi': [2, 'always'],
+    'camelcase': 0,
+    'no-undef': 0
   }
 }
