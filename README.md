@@ -2,7 +2,7 @@
 
 > 先定个小目标，比如把难度为 `easy` 题目全部做完
 
-## Usage
+## Test
 
 ```bash
 npm test
@@ -14,10 +14,10 @@ npm test
 # 1
 npm init -f
 
-# 2
+# 2. 安装 eslint
 npm install eslint
 npx eslint --init
 
-# 3
+# 3. 安装 jest 环境，支持 es6
 npm install -D jest babel-jest babel-core babel-preset-env regenerator-runtime
 ```
