@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function (s) {
+export var isValid = function (s) {
   const left = new Map([['(', 1], ['{', 2], ['[', 3]]);
   const right = new Map([[')', 1], ['}', 2], [']', 3]]);
 
