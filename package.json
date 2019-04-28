@@ -4,7 +4,8 @@
   "description": "one day one leetcode!",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose",
+    "travis": "jest && codecov",
+    "test": "jest",
     "lint": "eslint src/**",
     "lint-fix": "eslint --fix src/** test/**"
   },
