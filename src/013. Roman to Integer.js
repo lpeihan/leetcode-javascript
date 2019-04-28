@@ -3,7 +3,7 @@
  * @param {string} s
  * @return {number}
  */
-export var romanToInt = function (s) {
+export var romanToInt = function(s) {
   const map = new Map([
     ['I', 1],
     ['V', 5],

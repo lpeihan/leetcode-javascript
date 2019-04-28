@@ -5,7 +5,7 @@
  * @return {number[]}
  */
 
-export var twoSum_0 = function (nums, target) {
+export var twoSum_0 = function(nums, target) {
   for (let i = 0; i < nums.length; i++) {
     const val = nums[i];
     for (let j = i + 1; j < nums.length; j++) {
@@ -20,7 +20,7 @@ export var twoSum_0 = function (nums, target) {
   return null;
 };
 
-export var twoSum = function (nums, target) {
+export var twoSum = function(nums, target) {
   const map = {};
 
   for (let i = 0; i < nums.length; i++) {

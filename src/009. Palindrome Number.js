@@ -3,7 +3,7 @@
  * @param {number} x
  * @return {boolean}
  */
-export var isPalindrome = function (x) {
+export var isPalindrome = function(x) {
   const str = String(x);
   let left = 0;
   let right = str.length - 1;

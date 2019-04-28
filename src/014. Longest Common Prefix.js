@@ -3,7 +3,7 @@
  * @param {string[]} strs
  * @return {string}
  */
-export var longestCommonPrefix = function (strs) {
+export var longestCommonPrefix = function(strs) {
   let index = 0;
   let prefix = '';
   while (strs.length && true) {

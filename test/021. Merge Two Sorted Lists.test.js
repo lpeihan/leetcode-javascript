@@ -1,6 +1,6 @@
 import { ListNode, mergeTwoLists } from '../src/021. Merge Two Sorted Lists';
 
-function createLinkedList (arr) {
+function createLinkedList(arr) {
   let head;
   let current;
 

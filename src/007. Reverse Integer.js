@@ -3,7 +3,7 @@
  * @param {number} x
  * @return {number}
  */
-export var reverse_0 = function (x) {
+export var reverse_0 = function(x) {
   let sum = 0;
   const MAX_VALUE = Math.pow(2, 31) - 1;
   const MIN_VALUE = Math.pow(-2, 31);
@@ -20,7 +20,7 @@ export var reverse_0 = function (x) {
   return sum;
 };
 
-export var reverse = function (x) {
+export var reverse = function(x) {
   const MAX_VALUE = Math.pow(2, 31) - 1;
   const MIN_VALUE = Math.pow(-2, 31);
   const flag = x > 0;

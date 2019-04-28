@@ -12,12 +12,12 @@
  * @return {ListNode}
  */
 
-export function ListNode (val) {
+export function ListNode(val) {
   this.val = val;
   this.next = null;
 }
 
-export var mergeTwoLists = function (l1, l2) {
+export var mergeTwoLists = function(l1, l2) {
   let head = null;
   let current = null;
 

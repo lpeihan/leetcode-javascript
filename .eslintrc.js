@@ -16,6 +16,7 @@ module.exports = {
   'rules': {
     'semi': [2, 'always'],
     'camelcase': 0,
-    'no-undef': 0
+    'no-undef': 0,
+    'space-before-function-paren': [2, 'never']
   }
 }

@@ -5,7 +5,7 @@
  * @return {number}
  */
 
-export var removeElement_0 = function (nums, val) {
+export var removeElement_0 = function(nums, val) {
   let count = 0;
 
   for (let i = 0; i < nums.length; i++) {
@@ -18,7 +18,7 @@ export var removeElement_0 = function (nums, val) {
   return count;
 };
 
-export var removeElement = function (nums, val) {
+export var removeElement = function(nums, val) {
   let i;
   for (i = 0; i < nums.length; i++) {
     if (nums[i] === val) {

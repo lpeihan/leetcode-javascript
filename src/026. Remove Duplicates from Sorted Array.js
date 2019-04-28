@@ -3,7 +3,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-export var removeDuplicates_0 = function (nums) {
+export var removeDuplicates_0 = function(nums) {
   for (let i = 0; i < nums.length - 1; i++) {
     if (nums[i] === nums[i + 1]) {
       nums.splice(i, 1);
@@ -14,7 +14,7 @@ export var removeDuplicates_0 = function (nums) {
   return nums.length;
 };
 
-export var removeDuplicates = function (nums) {
+export var removeDuplicates = function(nums) {
   let fast = 1;
   let slow = 1;
 
