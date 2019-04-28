@@ -19,5 +19,7 @@ npm install eslint
 npx eslint --init
 
 # 3. 安装 jest 环境，支持 es6
-npm install -D jest babel-jest babel-core babel-preset-env regenerator-runtime
+npm install jest
+jest --init
+npm install babel-jest @babel/core @babel/preset-env @babel/preset-typescript -D
 ```
