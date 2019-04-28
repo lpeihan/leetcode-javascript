@@ -1,11 +1,23 @@
-> one day one leetcode!
+# one day one leetcode!
 
-## Totol Count
+> 先定个小目标，比如把难度为 `easy` 题目全部做完
 
-* easy: 9
+## Usage
 
-## Finished
+```bash
+npm test
+```
 
-* easy: 1、7、9、13、14、21、26、27、28
+## Environment
 
-* total: 1、7、9、13、14、21、26、27、28
+```bash
+# 1
+npm init -f
+
+# 2
+npm install eslint
+npx eslint --init
+
+# 3
+npm install -D jest babel-jest babel-core babel-preset-env regenerator-runtime
+```
