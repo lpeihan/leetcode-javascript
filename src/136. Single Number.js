@@ -1,7 +1,7 @@
 /**
  * @param {number[]} nums
  * @return {number}
- * 按位异或^ 
+ * 按位异或^ 与1异或相反，与0异或为本身，两个相同的数异或为0
  */
 export var singleNumber_0 = function(nums) {
   const map = new Map();
