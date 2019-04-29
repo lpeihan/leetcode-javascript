@@ -23,6 +23,17 @@ export var singleNumber_1 = function(nums) {
   });
 };
 
+export var singleNumber_2 = function(nums) {
+  const map = new Map();
+
+  for (let i = 0; i < nums.length; i++) {
+    const key = nums[i];
+    map.has(key) ? map.delete(key) : map.set(key, 1);
+  }
+
+  return [...map.keys()][0];
+};
+
 export var singleNumber = function(nums) {
   let sum = 0;
 
