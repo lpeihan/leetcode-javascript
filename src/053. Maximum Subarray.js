@@ -1,4 +1,5 @@
 /**
+ * https://leetcode.com/problems/maximum-subarray/
  * @param {number[]} nums
  * @return {number}
  */
@@ -21,10 +22,6 @@ export var maxSubArray_0 = function(nums) {
 };
 
 // 在线处理
-/**
- * @param {number[]} nums
- * @return {number}
- */
 export var maxSubArray = function(nums) {
   let max = -Infinity;
   let sum = 0;
