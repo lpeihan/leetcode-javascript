@@ -1,6 +1,7 @@
 /**
  * @param {number[]} nums
  * @return {number}
+ * 按位异或^ 
  */
 export var singleNumber_0 = function(nums) {
   const map = new Map();
