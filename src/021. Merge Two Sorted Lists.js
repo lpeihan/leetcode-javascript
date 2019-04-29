@@ -12,10 +12,7 @@
  * @return {ListNode}
  */
 
-export function ListNode(val) {
-  this.val = val;
-  this.next = null;
-}
+import { ListNode } from '../utils/LinkedList';
 
 export var mergeTwoLists = function(l1, l2) {
   let head = null;
