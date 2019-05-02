@@ -36,7 +36,7 @@ export var climbStairs_0 = function(n) {
 };
 
 /**
- * 优化后的动态规划，不需要一个数组去记录所有值
+ * 优化后的动态规划，实际上f(n)只需要 f(n - 1) 和 f(n - 2)两个值，而不需要一个数组来记录，所以可以用两个变量来减少内存开销
  */
 export var climbStairs_1 = function(n) {
   if (n <= 2) {
