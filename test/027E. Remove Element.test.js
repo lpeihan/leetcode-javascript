@@ -1,4 +1,4 @@
-import { removeElement_0, removeElement } from '../src/027. Remove Element';
+import { removeElement_0, removeElement } from '../src/027E. Remove Element';
 
 test('removeElement_0', () => {
   expect(removeElement_0([3, 2, 2, 3], 3)).toBe(2);

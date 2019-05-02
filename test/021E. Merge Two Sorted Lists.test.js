@@ -1,4 +1,4 @@
-import { mergeTwoLists } from '../src/021. Merge Two Sorted Lists';
+import { mergeTwoLists } from '../src/021E. Merge Two Sorted Lists';
 import { LinkedList } from '../utils/LinkedList';
 
 test('mergeTwoLists', () => {

@@ -3,7 +3,7 @@ import {
   singleNumber_1,
   singleNumber_2,
   singleNumber
-} from '../src/136. Single Number';
+} from '../src/136E. Single Number';
 
 test('singleNumber_0', () => {
   expect(singleNumber_0([2, 2, 1])).toBe(1);

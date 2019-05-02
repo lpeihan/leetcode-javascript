@@ -1,4 +1,4 @@
-import { countAndSay } from '../src/038. Count and Say';
+import { countAndSay } from '../src/038E. Count and Say';
 
 test('countAndSay', () => {
   expect(countAndSay(1)).toBe('1');

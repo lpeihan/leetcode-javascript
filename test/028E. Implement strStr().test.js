@@ -1,4 +1,4 @@
-import { strStr_0, strStr } from '../src/028. Implement strStr()';
+import { strStr_0, strStr } from '../src/028E. Implement strStr()';
 
 test('strStr_0', () => {
   expect(strStr_0('hello', 'll')).toBe(2);

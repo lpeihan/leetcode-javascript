@@ -1,4 +1,4 @@
-import { longestCommonPrefix } from '../src/014. Longest Common Prefix';
+import { longestCommonPrefix } from '../src/014E. Longest Common Prefix';
 
 test('longestCommonPrefix', () => {
   expect(longestCommonPrefix(['flower', 'flow', 'flight'])).toBe('fl');

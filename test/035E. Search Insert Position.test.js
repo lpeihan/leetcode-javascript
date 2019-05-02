@@ -1,4 +1,4 @@
-import { searchInsert } from '../src/035. Search Insert Position';
+import { searchInsert } from '../src/035E. Search Insert Position';
 
 test('searchInsert', () => {
   expect(searchInsert([1, 3, 5, 6], 5)).toBe(2);

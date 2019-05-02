@@ -1,4 +1,4 @@
-import { deleteDuplicates } from '../src/083. Remove Duplicates from Sorted List';
+import { deleteDuplicates } from '../src/083E. Remove Duplicates from Sorted List';
 import { LinkedList } from '../utils/LinkedList';
 
 test('deleteDuplicates', () => {

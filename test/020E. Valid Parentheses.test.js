@@ -1,4 +1,4 @@
-import { isValid } from '../src/020. Valid Parentheses';
+import { isValid } from '../src/020E. Valid Parentheses';
 
 test('isValid', () => {
   expect(isValid('()')).toBe(true);

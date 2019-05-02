@@ -1,7 +1,7 @@
 import {
   removeDuplicates_0,
   removeDuplicates
-} from '../src/026. Remove Duplicates from Sorted Array';
+} from '../src/026E. Remove Duplicates from Sorted Array';
 
 test('removeDuplicates_0', () => {
   expect(removeDuplicates_0([1, 1, 2])).toBe(2);

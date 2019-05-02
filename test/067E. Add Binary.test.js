@@ -1,4 +1,4 @@
-import { addBinary } from '../src/067. Add Binary';
+import { addBinary } from '../src/067E. Add Binary';
 
 test('addBinary', () => {
   expect(addBinary('11', '1')).toBe('100');

@@ -1,7 +1,7 @@
 import {
   lengthOfLastWord_0,
   lengthOfLastWord
-} from '../src/058. Length of Last Word';
+} from '../src/058E. Length of Last Word';
 
 test('lengthOfLastWord_0', () => {
   expect(lengthOfLastWord_0('Hello World')).toBe(5);

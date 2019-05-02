@@ -1,4 +1,4 @@
-import { reverse_0, reverse } from '../src/007. Reverse Integer';
+import { reverse_0, reverse } from '../src/007E. Reverse Integer';
 
 test('reverse_0', () => {
   expect(reverse_0(123)).toBe(321);
