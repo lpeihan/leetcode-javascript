@@ -6,6 +6,7 @@
 export var longestCommonPrefix = function(strs) {
   let index = 0;
   let prefix = '';
+
   while (strs.length && true) {
     let letter = strs[0][index];
 
@@ -15,7 +16,6 @@ export var longestCommonPrefix = function(strs) {
 
     for (let i = 1; i < strs.length; i++) {
       if (strs[i][index] === letter) {
-
       } else {
         return prefix;
       }

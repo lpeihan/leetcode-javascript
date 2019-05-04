@@ -4,8 +4,8 @@
  */
 
 /**
-  * 递归
-  */
+ * 递归
+ */
 export var fib = function(n) {
   if (n <= 1) {
     return n;

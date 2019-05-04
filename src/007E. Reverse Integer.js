@@ -9,8 +9,8 @@ export var reverse_0 = function(x) {
   const MIN_VALUE = Math.pow(-2, 31);
 
   while (x) {
-    sum = sum * 10 + x % 10;
-    x = x / 10 | 0;
+    sum = sum * 10 + (x % 10);
+    x = (x / 10) | 0;
 
     if (sum < MIN_VALUE || sum > MAX_VALUE) {
       return 0;
@@ -27,7 +27,13 @@ export var reverse = function(x) {
 
   x = Math.abs(x);
 
-  x = parseInt(x.toString().split('').reverse().join(''));
+  x = parseInt(
+    x
+      .toString()
+      .split('')
+      .reverse()
+      .join('')
+  );
 
   const res = flag ? x : -x;
 

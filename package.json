@@ -7,7 +7,8 @@
     "travis": "jest && codecov",
     "test": "jest",
     "lint": "eslint src/**",
-    "lint-fix": "eslint --fix src/** test/**"
+    "lint-fix": "eslint --fix src/** test/**",
+    "prettier": "prettier --write  \"src/**/*.js\" \"test/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -24,11 +25,15 @@
     "@babel/preset-env": "^7.4.4",
     "babel-jest": "^24.7.1",
     "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "prettier": "^1.17.0",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }
