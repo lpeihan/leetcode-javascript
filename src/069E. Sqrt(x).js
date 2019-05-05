@@ -15,17 +15,18 @@ export var mySqrt_0 = function(x) {
   let left = 1;
   let right = x;
 
-  while (left <= right) {
+  while (true) {
     let mid = parseInt((left + right) / 2, 10);
 
     if (mid * mid < x) {
       left = mid + 1;
     } else if (mid * mid > x) {
+      if ((mid - 1) * (mid - 1) < x) {
+        return mid - 1;
+      }
       right = mid - 1;
     } else {
       return mid;
     }
   }
-
-  return left - 1;
 };
