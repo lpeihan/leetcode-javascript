@@ -13,6 +13,6 @@ This is the repo of my leetcode solutions width javascript.
 I've used Jest to test the programs, the test cases are defined in the test/**.test.js
 
 ```bash
- # test all test cases
+# test all test cases
 npm test
 ```
