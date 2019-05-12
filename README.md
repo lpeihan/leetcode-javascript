@@ -7,11 +7,12 @@
 one day one leetcode. 
 
 ## Introduction
-This is the repo of my Leetcode solutions width javascript.
+This is the repo of my leetcode solutions width javascript.
 
 ## Test Cases
 I've used Jest to test the programs, the test cases are defined in the test/**.test.js
 
 ```bash
-npm test # test all test cases
+ # test all test cases
+npm test
 ```
