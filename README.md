@@ -10,7 +10,7 @@ one day one leetcode.
 This is the repo of my leetcode solutions width javascript.
 
 ## Test Cases
-I've used Jest to test the programs, the test cases are defined in the test/**.test.js
+I've used Jest to test leetcode solutions, the test cases are defined in the test/**.test.js
 
 ```bash
 # test all test cases
@@ -18,4 +18,4 @@ npm test
 ```
 
 ## Notes
-Notes目录用于记录一些常用的数据结构和算法实现
+Learning notes
