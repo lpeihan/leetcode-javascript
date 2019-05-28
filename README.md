@@ -16,3 +16,6 @@ I've used Jest to test the programs, the test cases are defined in the test/**.t
 # test all test cases
 npm test
 ```
+
+## Notes
+Notes目录用于记录一些常用的数据结构和算法实现

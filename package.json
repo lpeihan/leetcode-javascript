@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "travis": "jest && codecov",
+    "test:notes": "jest notes",
     "test": "jest",
     "lint": "eslint src/**",
     "lint-fix": "eslint --fix src/** test/**",
