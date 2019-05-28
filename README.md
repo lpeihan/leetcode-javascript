@@ -16,6 +16,3 @@ I've used Jest to test leetcode solutions, the test cases are defined in the tes
 # test all test cases
 npm test
 ```
-
-## Notes
-Learning notes
