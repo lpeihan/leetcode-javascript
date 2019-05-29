@@ -1,9 +1,13 @@
+// https://lufficc.com/blog/heap-sort-and-max-priority-queue
+
+// 交换
 function swap(arr, i, j) {
   let temp = arr[i];
   arr[i] = arr[j];
   arr[j] = temp;
 }
 
+// 维护最大堆
 function heapify(tree, n, i) {
   if (i >= n) {
     return;
@@ -27,7 +31,8 @@ function heapify(tree, n, i) {
   }
 }
 
-function buildHeap(arr) {
+// 建立一个最大堆
+function buildMaxHeap(arr) {
   let len = arr.length;
   let last = len - 1;
   let parent = ((last - 1) / 2) | 0;
@@ -37,14 +42,9 @@ function buildHeap(arr) {
   }
 }
 
-// let tree = [4, 10, 3, 5, 1, 2];
-// heapify(tree, tree.length, 0);
-
-let tree = [1, 2, 3, 4, 5];
-buildHeap(tree);
-
+// 堆排序
 function heapSort(arr) {
-  buildHeap(arr);
+  buildMaxHeap(arr);
 
   for (let i = arr.length - 1; i >= 0; i--) {
     swap(arr, i, 0);
@@ -52,8 +52,8 @@ function heapSort(arr) {
   }
 }
 
-// let tree = [1, 2, 3, 4, 5];
-// heapSort(tree);
+let tree = [5, 3, 4, 1, 2, 2, 6];
+heapSort(tree);
 
 tree.forEach(item => {
   console.log(item);
