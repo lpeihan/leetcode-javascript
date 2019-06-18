@@ -14,14 +14,14 @@ class BinarySearchTree {
 
   _insertNode(root, node) {
     if (node.key < root.key) {
-      if (node.left) {
-        this._insertNode(node.left, node);
+      if (root.left) {
+        this._insertNode(root.left, node);
       } else {
         root.left = node;
       }
     } else {
-      if (node.right) {
-        this._insertNode(node.right, node);
+      if (root.right) {
+        this._insertNode(root.right, node);
       } else {
         root.right = node;
       }
@@ -68,7 +68,6 @@ bst.insert(20);
 bst.insert(18);
 bst.insert(25);
 
-// bst.preOrder(function(val) {
-//   console.log(val);
-// });
-console.log(JSON.stringify(bst.root));
+bst.preOrder(function(val) {
+  console.log(val);
+});
