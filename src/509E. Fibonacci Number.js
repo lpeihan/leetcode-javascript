@@ -24,7 +24,7 @@ export var fib_0 = (function() {
       return map.get(n);
     }
 
-    map.set(n, fib(n - 1) + fib(n - 2));
+    map.set(n, fib_0(n - 1) + fib_0(n - 2));
 
     return map.get(n);
   };
