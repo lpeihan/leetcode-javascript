@@ -38,6 +38,21 @@ class BinarySearchTree {
     this._postOrderNode(this.root, callback);
   }
 
+  // 层序遍历
+  levelOrder(callback) {
+    const queue = [];
+
+    queue.push(this.root);
+
+    while (queue.length) {
+      const node = queue.shift();
+      callback(node.key);
+
+      node.left && queue.push(node.left);
+      node.right && queue.push(node.right);
+    }
+  }
+
   // 最大值
   max() {
     let current = this.root;
@@ -241,9 +256,13 @@ bst.insert(20);
 bst.insert(18);
 bst.insert(25);
 
+bst.levelOrder(function(val) {
+  console.log(val);
+});
+
 // bst.preOrder(function(val) {
 //   console.log(val);
 // });
 
-console.log(bst.remove(3));
-console.log(bst.min());
+// console.log(bst.remove(3));
+// console.log(bst.min());
