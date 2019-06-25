@@ -144,7 +144,7 @@ class BinarySearchTree {
     // 删除有两个节点的节点
     else {
       // 获取后继节点
-      let successor = this.getSuccessor(current);
+      let successor = this._getSuccessor(current);
 
       // 判断是否是根节点
       if (current === this.root) {
@@ -182,6 +182,8 @@ class BinarySearchTree {
       successorParent.left = successorParent.right;
       successor.right = delNode.right;
     }
+
+    return successor;
   }
 
   _searchNode(node, key) {
@@ -255,6 +257,7 @@ bst.insert(14);
 bst.insert(20);
 bst.insert(18);
 bst.insert(25);
+console.log(bst.remove(15));
 
 bst.levelOrder(function(val) {
   console.log(val);
@@ -264,5 +267,4 @@ bst.levelOrder(function(val) {
 //   console.log(val);
 // });
 
-// console.log(bst.remove(3));
 // console.log(bst.min());
