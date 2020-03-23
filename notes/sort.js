@@ -78,57 +78,57 @@ function shellSort(arr) {
 //   for (let )
 // }
 
-function merge(left, right) {
-  const ret = [];
-  while (left.length && right.length) {
-    if (left[0] <= right[0]) {
-      ret.push(left.shift());
-    } else {
-      ret.push(right.shift());
-    }
-  }
+// function merge(left, right) {
+//   const ret = [];
+//   while (left.length && right.length) {
+//     if (left[0] <= right[0]) {
+//       ret.push(left.shift());
+//     } else {
+//       ret.push(right.shift());
+//     }
+//   }
 
-  return ret.concat(left, right);
-}
+//   return ret.concat(left, right);
+// }
 
-function mergeSort(arr) {
-  if (arr.length <= 1) {
-    return arr;
-  }
+// function mergeSort(arr) {
+//   if (arr.length <= 1) {
+//     return arr;
+//   }
 
-  const center = parseInt(arr.length / 2);
-  const left = arr.slice(0, center);
-  const right = arr.slice(center);
+//   const mid = parseInt(arr.length / 2);
+//   const left = arr.slice(0, mid);
+//   const right = arr.slice(mid);
 
-  const r1 = mergeSort(left);
-  const r2 = mergeSort(right);
+//   const r1 = mergeSort(left);
+//   const r2 = mergeSort(right);
 
-  return merge(r1, r2);
-}
+//   return merge(r1, r2);
+// }
 
 function quickSort(arr) {
- _partition(arr, 0, arr.length - 1);
+  _quickSort(arr, 0, arr.length - 1);
 }
 
 function _medium(arr, left, right) {
-  const center = (left + right) / 2 | 0;
+  const mid = (left + right) / 2 | 0;
 
-  if (arr[left] > arr[center]) {
-    swap(arr, left, center);
+  if (arr[left] > arr[mid]) {
+    swap(arr, left, mid);
   };
   if (arr[left] > arr[right]) {
     swap(arr, left, right);
   };
-  if (arr[center] > arr[right]) {
-    swap(arr, center, right);
+  if (arr[mid] > arr[right]) {
+    swap(arr, mid, right);
   };
 
-  swap(arr, center, right - 1);
+  swap(arr, mid, right - 1);
 
   return arr[right - 1];
 }
 
-function _partition(arr, left, right) {
+function _quickSort(arr, left, right) {
   if (left >= right) {
     return;
   } 
@@ -149,12 +149,47 @@ function _partition(arr, left, right) {
 
   swap(arr, i, right - 1);
 
-  _partition(arr, left, i - 1);
-  _partition(arr, i + 1, right);
+  _quickSort(arr, left, i - 1);
+  _quickSort(arr, i + 1, right);
 }
 
+function mergeSort(arr) {
+  _mergeSort(arr, 0, arr.length - 1);
+}
 
-const arr = [66, 12, 88, 7, 100, 5, 566, 23];
+function _mergeSort(arr, l, r) {
+  if (l === r) {
+    return;
+  }
 
-quickSort(arr);
+  const m = (l + r) / 2 | 0;
+  _mergeSort(arr, l, m);
+  _mergeSort(arr, m + 1, r);
+  _merge(arr, l, m, r);
+}
+
+function _merge(arr, l, m, r) {
+  const left = arr.slice(l, m + 1);
+  const right = arr.slice(m + 1, r + 1);
+  
+
+  while (left.length && right.length) {
+    arr[l] = left[0] <= right[0] ? left.shift() : right.shift();
+    l++;
+  }
+
+  for (let i = 0; i < left.length; i++) {
+    arr[l] = left[i];
+    l++;
+  }
+
+  for (let i = 0; i < right.length; i++) {
+    arr[l] = right[i];
+    l++;
+  }
+}
+
+const arr = [66, 12, 88, 7, 100, 5, 566, 23, 22];
+
+mergeSort(arr);
 console.log(arr);
