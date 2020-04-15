@@ -67,4 +67,4 @@ function DFS(graph, s) {
   }
 }
 
-// DFS(graph, 'A'); // A C E D F B
+DFS(graph, 'A'); // A C E D F B
