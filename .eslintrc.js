@@ -28,6 +28,7 @@ module.exports = {
     'semi': [2, 'always'],
     'camelcase': 0,
     'no-undef': 0,
+    'no-unused-vars': 0,
     'space-before-function-paren': [2, 'never']
   }
 }

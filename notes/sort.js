@@ -4,7 +4,6 @@ function swap(arr, i, j) {
   arr[j] = tmp;
 }
 
-
 function selectionSort(arr) {
   const len = arr.length;
   for (let i = 0; i < len; i++) {
@@ -65,7 +64,7 @@ function shellSort(arr) {
         arr[j] = arr[j - gap];
       }
 
-      arr[j] = tmp; 
+      arr[j] = tmp;
     }
   }
 
@@ -111,17 +110,17 @@ function quickSort(arr) {
 }
 
 function _medium(arr, left, right) {
-  const mid = (left + right) / 2 | 0;
+  const mid = ((left + right) / 2) | 0;
 
   if (arr[left] > arr[mid]) {
     swap(arr, left, mid);
-  };
+  }
   if (arr[left] > arr[right]) {
     swap(arr, left, right);
-  };
+  }
   if (arr[mid] > arr[right]) {
     swap(arr, mid, right);
-  };
+  }
 
   swap(arr, mid, right - 1);
 
@@ -131,7 +130,7 @@ function _medium(arr, left, right) {
 function _quickSort(arr, left, right) {
   if (left >= right) {
     return;
-  } 
+  }
 
   const pivot = _medium(arr, left, right);
 
@@ -162,7 +161,7 @@ function _mergeSort(arr, l, r) {
     return;
   }
 
-  const m = (l + r) / 2 | 0;
+  const m = ((l + r) / 2) | 0;
   _mergeSort(arr, l, m);
   _mergeSort(arr, m + 1, r);
   _merge(arr, l, m, r);
@@ -171,7 +170,6 @@ function _mergeSort(arr, l, r) {
 function _merge(arr, l, m, r) {
   const left = arr.slice(l, m + 1);
   const right = arr.slice(m + 1, r + 1);
-  
 
   while (left.length && right.length) {
     arr[l] = left[0] <= right[0] ? left.shift() : right.shift();
