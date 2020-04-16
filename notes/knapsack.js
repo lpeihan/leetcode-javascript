@@ -1,37 +1,35 @@
-const weights = [2, 2, 6, 5, 4];
-const values = [6, 3, 5, 4, 6];
+const weights = [0, 2, 2, 6, 5, 4];
+const values = [0, 6, 3, 5, 4, 6];
 const W = 10;
 
 function knapsack(weights, values, W) {
-  const res = [[]];
-  const N = weights.length - 1;
+  const arr = [];
+  const N = weights.length;
+  W = W + 1;
 
-  for (let i = 0; i <= W; i++) {
-    if (i < weights[0]) {
-      res[0][i] = 0;
-    } else {
-      res[0][i] = values[0];
+  for (let i = 0; i < N; i++) {
+    arr[i] = [];
+    for (let j = 0; j < W; j++) {
+      arr[i][j] = 0;
     }
   }
 
-  for (let i = 0; i <= W; i++) {
-    for (let j = 1; j <= N; j++) {
-      if (!res[j]) {
-        res[j] = [];
-      }
-
-      if (i < weights[j]) {
-        res[j][i] = res[j - 1][i];
+  for (let i = 1; i < N; i++) {
+    for (let j = 1; j < W; j++) {
+      if (weights[i] > j) {
+        arr[i][j] = arr[i - 1][j];
       } else {
-        res[j][i] = Math.max(
-          res[j - 1][i],
-          res[j - 1][i - weights[j]] + values[j]
-        );
+        const value1 = arr[i - 1][j];
+        const value2 = arr[i - 1][j - weights[i]] + values[i];
+
+        arr[i][j] = Math.max(value1, value2);
       }
     }
   }
 
-  return res;
+  console.log(arr);
+
+  return arr[N - 1][W - 1];
 }
 
 const res = knapsack(weights, values, W);
