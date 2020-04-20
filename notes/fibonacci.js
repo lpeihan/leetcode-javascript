@@ -1,4 +1,3 @@
-
 function fibonacci(N) {
   const cache = [0, 1];
 
@@ -46,4 +45,4 @@ function fibonacci4(N) {
 
   return sum;
 }
-console.log(fibonacci4(5))
+console.log(fibonacci4(5));
