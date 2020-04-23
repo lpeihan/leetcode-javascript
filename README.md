@@ -1,6 +1,6 @@
 # leetcode-javascript
 
-[![Build Status](https://www.travis-ci.org/lpeihan/leetcode-javascript.svg?branch=master)](https://www.travis-ci.org/lpeihan/leetcode-javascript)
+<!-- [![Build Status](https://www.travis-ci.org/lpeihan/leetcode-javascript.svg?branch=master)](https://www.travis-ci.org/lpeihan/leetcode-javascript) -->
 [![codecov](https://codecov.io/gh/lpeihan/leetcode-javascript/branch/master/graph/badge.svg)](https://codecov.io/gh/lpeihan/leetcode-javascript)
 [![leetcode](https://leetcode-badge.chyroc.cn/?name=parhamlee&leetcode_badge_style=Solved/Total-{{.solved_question}}/{{.all_question}}-green.svg)](https://github.com/Chyroc/leetcode-badge)
 
@@ -21,5 +21,5 @@ npm test
 
 ### 动态规划
 
-[Combination Sum ii](http://example.com/ "With a Title").
+[040M. 组合总和 II](https://github.com/lpeihan/leetcode-javascript/blob/master/src/040M.%20Combination%20Sum%20ii.js)
 
