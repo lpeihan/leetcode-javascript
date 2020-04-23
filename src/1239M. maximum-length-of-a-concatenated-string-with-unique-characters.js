@@ -3,23 +3,25 @@
  * @param {string[]} arr
  * @return {number}
  */
-var maxLength = function(arr) {
-  let list = ['', arr[0]];
-  const len = arr.length;
+function isUnique(s, s1 = '') {
+  const map = {};
 
-  function isUnique(s) {
-    const map = {};
+  s = s + s1;
 
-    for (let i = 0; i < s.length; i++) {
-      if (map[s[i]]) {
-        return false;
-      }
-
-      map[s[i]] = true;
+  for (let i = 0; i < s.length; i++) {
+    if (map[s[i]]) {
+      return false;
     }
 
-    return true;
+    map[s[i]] = true;
   }
+
+  return true;
+}
+
+var maxLength_0 = function(arr) {
+  let list = ['', arr[0]];
+  const len = arr.length;
 
   for (let i = 1; i < len; i++) {
     list = [...list, ...list];
@@ -36,6 +38,28 @@ var maxLength = function(arr) {
   }
 
   return max;
+};
+
+var maxLength = function(arr) {
+  function dfs(index, str) {
+    if (index === arr.length) {
+      return 0;
+    }
+
+    const s = arr[index];
+
+    if (isUnique(s, str)) {
+      let len = s.length;
+
+      let len1 = len + dfs(index + 1, str + s);
+      let len2 = dfs(index + 1, str);
+      return Math.max(len1, len2);
+    }
+
+    return dfs(index + 1, str);
+  }
+
+  return dfs(0, '');
 };
 
 console.log(maxLength(['un', 'iq', 'ue']));
