@@ -9,7 +9,7 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
-var isSymmetric = function(root) {
+var isSymmetric_0 = function(root) {
   if (root === null) {
     return true;
   }
@@ -45,6 +45,36 @@ var isSymmetric = function(root) {
         return false;
       }
     }
+  }
+
+  return true;
+};
+
+var isSymmetric = function(root) {
+  const res = [];
+
+  function backtrack(node, arr) {
+    if (node.left === null && node.right === null) {
+      res.push(arr);
+      return;
+    }
+
+    backtrack(node.left, [...arr, node.val]);
+    backtrack(node.right, [...arr, node.val]);
+  }
+
+  backtrack(root, []);
+
+  let left = 0;
+  let right = res.length - 1;
+
+  while (left <= right) {
+    if (JSON.stringify(res[left]) !== JSON.stringify(res[right])) {
+      return false;
+    }
+
+    left++;
+    right--;
   }
 
   return true;

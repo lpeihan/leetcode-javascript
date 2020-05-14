@@ -34,18 +34,18 @@ function BFS(graph, s) {
   return parent;
 }
 
-const parent = BFS(graph, 'E');
+// const parent = BFS(graph, 'E');
 
-let v = 'B';
-while (v) {
-  console.log(v);
-  v = parent[v];
-}
+// let v = 'B';
+// while (v) {
+//   console.log(v);
+//   v = parent[v];
+// }
 
 // BFS(graph, 'A'); // A B C D E F
 // BFS(graph, 'E'); // E C D A B F
 
-function DFS(graph, s) {
+function DFS_0(graph, s) {
   const queue = [];
   const seen = new Set();
 
@@ -65,6 +65,27 @@ function DFS(graph, s) {
 
     console.log(vertex);
   }
+}
+
+function DFS(graph, s) {
+  const seen = new Set();
+
+  function _dfs(vertex) {
+    console.log(vertex);
+
+    seen.add(vertex);
+    const children = graph[vertex];
+
+    for (let i = 0; i < children.length; i++) {
+      const val = children[i];
+
+      if (seen.has(val) === false) {
+        _dfs(val);
+      }
+    }
+  }
+
+  _dfs(s);
 }
 
 DFS(graph, 'A'); // A C E D F B
